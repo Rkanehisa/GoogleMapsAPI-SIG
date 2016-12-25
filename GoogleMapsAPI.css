@@ -1,0 +1,76 @@
+body {
+    background:#222324;
+}
+
+.header{
+	height: 5%;
+	border-left: 1px;
+	border-right: 1px;
+	border-bottom: 1px solid #BEC9F7;
+	border-top: 1px;
+	width: 100%;
+}
+
+
+
+#top{
+	margin-top: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 0%;
+	padding-bottom: 1%;
+	color: #F9F9F9;
+	background: linear-gradient(to right, #255191, #25419B);
+	border-radius: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 2%;
+}
+
+#map {
+	margin-top: 4%;
+	margin-right: 8%;
+	margin-left: 8%;
+	margin-bottom: 4%;
+	border-style: double;
+	border-color: #ABA8FF;
+	height: 60%;
+	width: 60%;
+}
+
+#nome{
+	color: #F9F9F9;
+	margin-top: 1%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	padding-top: 0.2%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 0.2%;
+	border-radius: 25px;
+	text-align: center;
+}
+
+#about{
+	color: #F9F9F9;
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 1%;
+	padding-top: 2%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 0.2%;
+	border-radius: 25px;
+	text-align: center;
+}
+#container{
+	margin-top: 1%;
+	margin-right: 4%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	border-radius: 15px;
+	background: linear-gradient(to right, #255191, #25419B);
+}

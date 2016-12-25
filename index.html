@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Trabalho de SIG</title>
+		<meta charset='utf-8'></meta>
+		
+		<link href="GoogleMapsAPI.css" rel="stylesheet" type="text/css">
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZ4bDhgJT1e4_fWP2bQgQpXIg2S9tYv4&callback=initMap">
+		</script>	
+		
+	</head>
+	
+    <header>
+    	<div id="top">
+			<h1>Trabalho de SIG</h1>
+		</div>
+        
+        <hr>
+    </header>
+    
+	<body>
+            <center>
+            	<div id="map"></div>
+				<script type="text/javascript"">var map;
+					function initMap() {
+						var map = new google.maps.Map(document.getElementById('map'), {center: {lat: -2.558271, lng: -44.307869},zoom: 10});
+
+						var casa = new google.maps.Marker({position: {lat: -2.496134, lng: -44.285270},map: map,title: 'Residência'});
+						var ufma = new google.maps.Marker({position: {lat: -2.558271, lng: -44.307869},map: map,title: 'UFMA'});
+						var cla = new google.maps.Marker({position: {lat: -2.338215, lng: -44.417156},map: map,title: 'Centro de Lançamento de Alcântara'});
+
+						var contentStringCasa = "<h1>Minha Casa<h1>"
+						var contentStringUFMA = "<h1>Universidade Federal do Maranhão</h1><p>A Universidade Federal do Maranhão (UFMA) é uma instituição de ensino superior pública brasileira, mantida pelo Governo Federal do Brasil. A UFMA é uma fundação vinculada ao Ministério da Educação. É uma das maiores universidades federais do País e um dos centros brasileiros de excelência no ensino e pesquisa. Sua sede está localizada em São Luís, possuindo campus também nas cidades de Bacabal, Balsas, Chapadinha, Codó, Grajaú, Imperatriz, Pinheiro e São Bernardo.</p><p>A universidade é considerada a maior e mais influente universidade do estado do Maranhão. Ela possui diversos campi em todo o estado, sendo o principal a Cidade Universitária, que está localizada no bairro do Bacanga, na cidade de São Luís.</p><a href>www.ufma.br/</a>"
+
+						var contentStringCLA = "<h1>Centro de Lançamento de Alcântara</h1></left><p>Centro de Lançamento de Alcântara (CLA) é a denominação da segunda base de lançamento de foguetes da Força Aérea Brasileira. Sedia os testes do Veículo Lançador de Satélites (VLS) e destina-se, futuramente, a realizar missões de lançamento de satélites.</p><a href>http://www2.fab.mil.br/cla/</a>"
+
+						var infoWindowCasa = new google.maps.InfoWindow({content: contentStringCasa});
+						var infowindowUFMA = new google.maps.InfoWindow({content: contentStringUFMA});
+						var infowindowCLA = new google.maps.InfoWindow({content: contentStringCLA});
+
+						casa.addListener('click', function() {infoWindowCasa.open(map, casa);});
+						ufma.addListener('click', function() {infowindowUFMA.open(map, ufma);});
+						cla.addListener('click', function() {infowindowCLA.open(map, cla);});
+					}
+				</script>
+			</center>
+            <div color="F9F9F9">
+        		<hr>
+        	</div>
+	</body>
+    
+    <footer>
+    	<div id="container">
+            <div id="nome">Rodrigo Kanehisa - UFMA  | <a href="about" id="about">About </a> |  Prof. Anselmo Cardoso de Paiva</div>
+		</div>
+		<script>
+			document.getElementById("about").onclick = function(){
+				alert("Trabalho de Sistema de Informações Geográficas\nProfessor: Anselmo Cardoso de Paiva \nUFMA - Ciência da Computação \nAndré Carvalho, Marcio Franklin, Rodrigo Kanehisa");
+			}
+		</script>
+    </footer>
+</html>
